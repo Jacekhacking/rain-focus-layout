@@ -1,0 +1,51 @@
+
+@use "../sass-utils/variables" as *;
+
+.navbar {
+    display: flex;
+    position: fixed;
+}
+.left-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 63px;
+    height: 100vh;
+    border-right: 1px solid $gray;
+
+    img{
+        margin: 10px;
+        height: 32px;
+        width: 32px;
+    }
+}
+.right-navbar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    width: 215px;
+    height: 100vh;
+    border-right: 1px solid $gray;
+    input{
+        background-color: $lightGray;
+        text-indent: 20px;
+        // background-image: url('../../images/Shape.png');
+        background-repeat: no-repeat;
+        background-position: 5px;
+        outline: none;
+        border: none;
+        font-size: 10px;
+        height: 24px;
+        width: 183px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+

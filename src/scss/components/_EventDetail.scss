@@ -1,0 +1,25 @@
+@use "../sass-utils/variables" as *;
+
+.event-detail-wrapper {
+    margin-left: 278px;
+    background-color: $white;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    img{
+        height: 89px;
+        width: 89px;
+    }
+}
+.event-header{
+    display: flex;
+    justify-content: space-between;
+    div{
+        display: flex; 
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
