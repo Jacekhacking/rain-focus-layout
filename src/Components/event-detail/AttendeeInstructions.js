@@ -1,5 +1,5 @@
 import NewRegistration from './NewRegistration';
-
+import AttendeeRegistrationWorkflow from './AttendeeRegistrationWorkflow';
 function AttendeeInstructions() {
   return (
     <section className="attendee-wrapper">
@@ -31,29 +31,10 @@ function AttendeeInstructions() {
 
       <div className="mb-24">
         <h3> Step 2: Build registration workflows.</h3>
-
         <div className="workflow-component">
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
+          <AttendeeRegistrationWorkflow />
+          <AttendeeRegistrationWorkflow />
+          <AttendeeRegistrationWorkflow />
 
           <NewRegistration />
         </div>

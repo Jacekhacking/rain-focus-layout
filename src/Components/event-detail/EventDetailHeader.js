@@ -7,9 +7,9 @@ function EventDetailHeader() {
         <div>
           <img src={Icon} alt="RainFocus Icon" />
 
-          <div className="event-title-wrapper">
+          <div className="flex flex-col">
             <h1>RainFocus Summit</h1>
-            <div className="event-location">
+            <div className="flex flex-col">
               <p>December 15th</p>
               <p>Lehi, Utah</p>
             </div>

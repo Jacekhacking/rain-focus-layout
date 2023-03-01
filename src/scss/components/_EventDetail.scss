@@ -70,14 +70,7 @@
 
    
 }
-.event-title-wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.event-location{
-    display: flex;
-    flex-direction: column;
-}
+
 
 // AttendeeInstructions Component
 
@@ -173,9 +166,7 @@
         
     }
 }
-.mb-24{
-    margin-bottom: 24px;
-}
+
 
 .arrow-img {
     background-image: url('../images/Arrow.png');
@@ -226,19 +217,4 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.flex {
-    display: flex;
-}
-.flex-col {
-    flex-direction: column;
-}
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pb-8{
-    padding-bottom: 8px;
 }
