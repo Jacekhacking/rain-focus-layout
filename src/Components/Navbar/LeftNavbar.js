@@ -4,7 +4,7 @@ import Shape from '../../images/CombinedShape.png';
 const LeftNavbar = () => {
   return (
     <div className="left-navbar">
-      <div className="">
+      <div className="flex-center flex-col">
         <img src={Shape} alt="" />
         <img src={Icon} alt="Icon" />
       </div>

@@ -4,10 +4,10 @@ import RightNavbar from './RightNavbar';
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <LeftNavbar />
       <RightNavbar />
-    </div>
+    </nav>
   );
 };
 

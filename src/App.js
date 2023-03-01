@@ -1,7 +1,7 @@
 import './scss/style.css';
 
-import Navbar from './Components/Navbar/Navbar.js';
-import EventDetail from './Components/EventDetail/EventDetail';
+import Navbar from './components/navbar/Navbar.js';
+import EventDetail from './pages/EventDetailPage';
 function App() {
   return (
     <div className="App">
