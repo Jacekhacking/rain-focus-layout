@@ -3,7 +3,7 @@ import LeftNavbar from './LeftNavbar';
 import RightNavbar from './RightNavbar';
 import Shape from '../../images/CombinedShape.png';
 import MobileNavPopOut from './MobileNavPopOut';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
   let isHamburgerActive = mobileNav ? 'hamburger-active' : '';
@@ -24,6 +24,19 @@ const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 800) {
+        setMobileNav(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const mobileNavbarHandler = (e) => {
     e.preventDefault();
     setMobileNav(!mobileNav);

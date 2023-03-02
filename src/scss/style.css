@@ -252,7 +252,6 @@ table {
 }
 
 .mobile-nav-backdrop {
-  transition: all 0.4s ease-in-out;
   margin-top: 20px;
   position: fixed;
   bottom: -44px;
