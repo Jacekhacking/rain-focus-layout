@@ -130,7 +130,8 @@ table {
   font-weight: 600;
   font-size: 14px;
 }
-.right-navbar input {
+
+.nav-search-bar {
   background-color: #F5F5F5;
   text-indent: 20px;
   background-image: url("../images/Shape.png");
@@ -224,6 +225,42 @@ table {
 }
 @media (min-width: 800px) {
   .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav-pop-out {
+  padding-top: 16px;
+  height: 100vh;
+  width: 70vw;
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 10;
+  box-shadow: 5px 30px 40px #000000;
+  overflow-y: auto;
+  font-size: 12px;
+}
+.mobile-nav-pop-out h2 {
+  padding-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (min-width: 800px) {
+  .mobile-nav-pop-out {
+    display: none;
+  }
+}
+
+.mobile-nav-backdrop {
+  margin-top: 20px;
+  position: fixed;
+  bottom: -44px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(119, 119, 119, 0.8);
+}
+@media (min-width: 800px) {
+  .mobile-nav-backdrop {
     display: none;
   }
 }
