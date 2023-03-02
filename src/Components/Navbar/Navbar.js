@@ -5,11 +5,13 @@ import Shape from '../../images/CombinedShape.png';
 import MobileNavPopOut from './MobileNavPopOut';
 import { useState } from 'react';
 
-const MobileNavbar = ({ mobileNavbarHandler }) => {
+const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
+  let isHamburgerActive = mobileNav ? 'hamburger-active' : '';
+
   return (
     <nav className="mobile-nav">
       <nav onClick={mobileNavbarHandler}>
-        <div className="hamburger">
+        <div className={`hamburger ${isHamburgerActive}`}>
           <span />
           <span />
           <span />
@@ -21,7 +23,7 @@ const MobileNavbar = ({ mobileNavbarHandler }) => {
 };
 
 const Navbar = () => {
-  const [mobileNav, setMobileNav] = useState(false);
+  const [mobileNav, setMobileNav] = useState(true);
   const mobileNavbarHandler = (e) => {
     e.preventDefault();
     setMobileNav(!mobileNav);
@@ -29,7 +31,10 @@ const Navbar = () => {
 
   return (
     <>
-      <MobileNavbar mobileNavbarHandler={mobileNavbarHandler} />
+      <MobileNavbar
+        mobileNavbarHandler={mobileNavbarHandler}
+        mobileNav={mobileNav}
+      />
       {mobileNav && (
         <MobileNavPopOut mobileNavbarHandler={mobileNavbarHandler} />
       )}
