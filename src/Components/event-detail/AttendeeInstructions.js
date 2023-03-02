@@ -1,4 +1,5 @@
 import NewRegistration from './NewRegistration';
+import AttendeeRegistrationWorkflow from './AttendeeRegistrationWorkflow';
 
 function AttendeeInstructions() {
   return (
@@ -6,7 +7,9 @@ function AttendeeInstructions() {
       <h2>Attendee</h2>
 
       <div className="mb-24">
-        <h3>Step 1: Base Settings</h3>
+        <h3>
+          <span className="bolded"> Step 1</span>: Base Settings
+        </h3>
         <div className="instruction-wrapper">
           <div>
             <h4> General </h4>
@@ -30,36 +33,22 @@ function AttendeeInstructions() {
       </div>
 
       <div className="mb-24">
-        <h3> Step 2: Build registration workflows.</h3>
-
+        <h3>
+          <span className="bolded"> Step 2</span>: Build registration workflows.
+        </h3>
         <div className="workflow-component">
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
-          <div className="instruction-wrapper-small">
-            <div className="flex pb-8">
-              <div className="arrow-img"></div>
-              <h4> Attendee Registration </h4>
-            </div>
-            <p> Start by creating a general registration workflow </p>
-          </div>
+          <AttendeeRegistrationWorkflow />
+          <AttendeeRegistrationWorkflow />
+          <AttendeeRegistrationWorkflow />
 
           <NewRegistration />
         </div>
       </div>
       <div>
-        <h3> Step 3: Build registration workflows.</h3>
+        <h3>
+          {' '}
+          <span className="bolded"> Step 3</span>: Build registration workflows.
+        </h3>
 
         <div className="workflow-component">
           <div className="instruction-wrapper-small">

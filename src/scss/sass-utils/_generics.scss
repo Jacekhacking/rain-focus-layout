@@ -1,0 +1,29 @@
+@use'_variables' as *;
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pb-8{
+    padding-bottom: 8px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.pl-8{
+    padding-left: 8px;
+}
+.bolded{
+    font-weight: $bold;
+}
+.semi-bolded{
+    font-weight: $semiBold;
+}
