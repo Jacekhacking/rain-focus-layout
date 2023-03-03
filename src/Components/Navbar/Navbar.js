@@ -23,7 +23,7 @@ const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
 };
 
 const Navbar = () => {
-  const [mobileNav, setMobileNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
