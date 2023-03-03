@@ -1,4 +1,4 @@
-import Icon from '../../images/Icon.png';
+import Icon from '../../images/Icon.svg';
 
 function EventDetailHeader() {
   return (

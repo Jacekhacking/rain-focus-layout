@@ -1,7 +1,7 @@
 // import '../../scss/Navbar.css';
 import LeftNavbar from './LeftNavbar';
 import RightNavbar from './RightNavbar';
-import Shape from '../../images/CombinedShape.png';
+import NavLogo from '../../images/NavLogo.svg';
 import MobileNavPopOut from './MobileNavPopOut';
 import { useState, useEffect } from 'react';
 
@@ -17,7 +17,7 @@ const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
           <span />
         </div>
       </nav>
-      <img src={Shape} alt="" />
+      <img src={NavLogo} alt="navigation logo" />
     </nav>
   );
 };
