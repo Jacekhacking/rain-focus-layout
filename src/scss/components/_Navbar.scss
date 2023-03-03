@@ -13,9 +13,13 @@
 .nav-logo{
     height: 64px;
     width: 48px;
+    padding-top: 10px;
     &:hover{
         cursor: pointer;
     }
+     @media (min-width: 800px) {
+        padding-top: 0;
+      }
 }
 
 .nav-icon{

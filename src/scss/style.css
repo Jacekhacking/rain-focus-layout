@@ -101,9 +101,15 @@ table {
 .nav-logo {
   height: 64px;
   width: 48px;
+  padding-top: 10px;
 }
 .nav-logo:hover {
   cursor: pointer;
+}
+@media (min-width: 800px) {
+  .nav-logo {
+    padding-top: 0;
+  }
 }
 
 .nav-icon {
