@@ -1,10 +1,15 @@
 import NewRegistration from './NewRegistration';
 import AttendeeRegistrationWorkflow from './AttendeeRegistrationWorkflow';
+import SVG from '../../images/Shape.svg';
+import personalPortalSVG from '../../images/PersonPortal.svg';
 
 function AttendeeInstructions() {
   return (
     <section className="attendee-wrapper">
-      <h2>Attendee</h2>
+      <div className="flex">
+        <img src={personalPortalSVG} alt="" />
+        <h2>Attendee</h2>
+      </div>
 
       <div className="mb-24">
         <h3>
@@ -46,13 +51,15 @@ function AttendeeInstructions() {
       </div>
       <div>
         <h3>
-          {' '}
           <span className="bolded"> Step 3</span>: Build registration workflows.
         </h3>
 
         <div className="workflow-component">
           <div className="instruction-wrapper-small">
-            <h4> General </h4>
+            <div className="instruction-title">
+              <img src={SVG} alt="" />
+              <h4> General </h4>
+            </div>
             <p> Define Attendee types & attributes </p>
           </div>
         </div>

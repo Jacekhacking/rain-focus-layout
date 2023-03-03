@@ -1,14 +1,15 @@
-import Icon from '../../images/Icon.png';
-import Shape from '../../images/CombinedShape.png';
+import Icon from '../../images/Icon.svg';
+import NavLogo from '../../images/NavLogo.svg';
+import UserIcon from '../../images/UserIcon.svg';
 
 const LeftNavbar = () => {
   return (
     <div className="left-navbar">
       <div className="flex-center flex-col">
-        <img src={Shape} alt="" />
-        <img src={Icon} alt="Icon" />
+        <img src={NavLogo} alt="nav-logo" className="nav-logo" />
+        <img src={Icon} alt="Icon" className="nav-icon" />
       </div>
-      <img src={Icon} alt="Icon" />
+      <img src={UserIcon} alt="Icon" className="nav-icon" />
     </div>
   );
 };

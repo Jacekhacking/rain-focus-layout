@@ -9,6 +9,24 @@
         display: none;
       }
 }
+
+.nav-logo{
+    height: 64px;
+    width: 48px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.nav-icon{
+    height: 32px;
+    width: 32px;
+    padding-bottom: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .left-navbar{
     display: flex;
     flex-direction: column;
@@ -17,12 +35,8 @@
     width: 63px;
     height: 100vh;
     border-right: 1px solid $gray;
-
-    img{
-        margin: 10px;
-        height: 32px;
-        width: 32px;
-    }
+    padding-bottom: 10px;
+ 
 }
 .right-navbar{
     display: flex;
@@ -146,6 +160,7 @@
 
 .mobile-nav-pop-out{
     padding-top: 16px;
+    padding-left: 8px;
     height: 100vh;
     width: 70vw;
     position: fixed;
@@ -154,7 +169,7 @@
     box-shadow: 5px 30px 40px $black;
     overflow-y: auto;
     font-size: 12px;
-    
+   
     h2{
         padding-bottom: 12px;
         font-weight: $bold;
