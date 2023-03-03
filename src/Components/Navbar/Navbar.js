@@ -17,7 +17,7 @@ const MobileNavbar = ({ mobileNavbarHandler, mobileNav }) => {
           <span />
         </div>
       </nav>
-      <img src={NavLogo} alt="navigation logo" />
+      <img className="nav-logo" src={NavLogo} alt="navigation logo" />
     </nav>
   );
 };
